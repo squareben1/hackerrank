@@ -1,3 +1,3 @@
 def hourglass_sum(arr)
-  1
+  arr[0][0..2].sum
 end
