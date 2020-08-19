@@ -23,4 +23,9 @@ describe '#hourglassSum' do
   it '1st three of 1st arr + arr[1][1] + 1st three of 3rd' do
     expect(hourglass_sum(arr_3)).to eq 7
   end
+
+  arr_4 = [[1, 1, 1, 4, 0, 0], [0, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
+  it 'Move it along 1' do
+    expect(hourglass_sum(arr_4)).to eq 8
+  end
 end
