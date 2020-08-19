@@ -43,4 +43,9 @@ describe '#hourglassSum' do
   it 'Returns correct output from sample' do
     expect(hourglass_sum(acceptance_arr)).to eq 19
   end
+
+  failing_arr = [[0, -4, -6, 0, -7, -6], [-1, -2, -6, -8, -3, -1], [-8, -4, -2, -8, -8, -6], [-3, -1, -2, -5, -7, -4], [-3, -5, -3, -6, -6, -6], [-3, -6, 0, -8, -6, -7]]
+  it 'Returns correct output from failing sample of -ve ints' do
+    expect(hourglass_sum(failing_arr)).to eq -19
+  end
 end
