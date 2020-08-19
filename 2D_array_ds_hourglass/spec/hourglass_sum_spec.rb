@@ -38,4 +38,9 @@ describe '#hourglassSum' do
   it 'Move to next row' do
     expect(hourglass_sum(arr_6)).to eq 7
   end
+
+  acceptance_arr = [[1, 1, 1, 0, 0, 0], [0, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0], [0, 0, 2, 4, 4, 0], [0, 0, 0, 2, 0, 0], [0, 0, 1, 2, 4, 0]]
+  it 'Returns correct output from sample' do
+    expect(hourglass_sum(acceptance_arr)).to eq 19
+  end
 end
