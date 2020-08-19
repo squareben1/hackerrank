@@ -28,4 +28,9 @@ describe '#hourglassSum' do
   it 'Move it along 1' do
     expect(hourglass_sum(arr_4)).to eq 8
   end
+
+  arr_5 = [[0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 1, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
+  it 'Move it along to end of line' do
+    expect(hourglass_sum(arr_5)).to eq 7
+  end
 end
