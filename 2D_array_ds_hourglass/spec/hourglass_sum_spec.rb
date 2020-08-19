@@ -33,4 +33,9 @@ describe '#hourglassSum' do
   it 'Move it along to end of line' do
     expect(hourglass_sum(arr_5)).to eq 7
   end
+
+  arr_6 = [[0, 0, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0], [0, 1, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
+  it 'Move to next row' do
+    expect(hourglass_sum(arr_6)).to eq 7
+  end
 end
