@@ -1,8 +1,10 @@
 
 def rotate_left(arr, rot)
-  first = arr.shift
-  p first
-  arr.push(first)
+  rot.times do 
+    first = arr.shift
+    arr.push(first)
+  end 
+  arr
 end
 
 
