@@ -7,10 +7,11 @@ function createCheckDigit(membershipId) {
     return a + b;
   }, 0);
 
-  console.log(sum);
-  if (sum <= 9) {
-    return sum;
-  } else {
-    return createCheckDigit(sum.toString());
-  }
+  // if (sum <= 9) {
+  //   return sum;
+  // } else {
+  //   return createCheckDigit(sum.toString());
+  // }
+
+  return sum <= 9 ? sum : createCheckDigit(sum.toString());
 }
